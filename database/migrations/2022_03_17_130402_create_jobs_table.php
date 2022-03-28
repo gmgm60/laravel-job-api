@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('JobName');
             $table->string('Description');
-            $table->timestamps('PublishedDate')->nullable();
+            $table->timestamp('Published_Date')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

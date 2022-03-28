@@ -52,4 +52,4 @@ Route::group(['middleware' => ['auth:sanctum']],function() {
 
 
 
-// Route::post('/job/create', [FlutterJobController::class, 'store']);
+ Route::post('/job/create', [FlutterJobController::class, 'store']);
