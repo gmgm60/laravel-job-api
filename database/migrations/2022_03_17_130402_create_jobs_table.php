@@ -21,7 +21,7 @@ return new class extends Migration
         });
     }
 
-    /**
+    /**php artisan migrate:refresh
      * Reverse the migrations.
      *
      * @return void

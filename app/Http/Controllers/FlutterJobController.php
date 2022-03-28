@@ -32,14 +32,14 @@ class FlutterJobController extends Controller
     public function store(Request $request)
     {
         //Create a job application
-        $app = new Apply();
-        $app->validate([
-            'user_id' => 'required',
-            'job_id' => 'required'
-        ]);
-        $app->user_id=$request->user_id;
-        $app->job_id=$request->job_id;
-        $app->save();
+        $job = new Job();
+//         $app->validate([
+//             'user_id' => 'required',
+//             'job_id' => 'required'
+//         ]);
+        $job->JobName=$request->JobName;
+        $job->Description=$request->Description;
+        $job->save();
         return response()->json(201);
     }
 
